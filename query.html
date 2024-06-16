@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback</title>
+    <style>
+        *
+{
+    margin: 0;
+    padding: 0;
+    box-sizing:content-box;
+}
+
+        body
+        {
+            height: 100vh;
+            width: fit-content;
+            background-image: url('wallpaper.png') ;
+            display: grid;
+            color:blue;
+            align-items: center;
+            justify-content: center;
+        }
+        .container 
+        {
+            display: flex;
+            flex-direction: column;
+            width: 615px;
+            height: 380PX;
+            padding: 10px;
+            margin-top: 2px;
+            border-style: solid;
+            border-color: blue;
+            border-radius: 20px;
+            background-color: aqua;
+           margin-left: 30%;
+           
+        }
+       
+        
+        h2
+        {
+            color: red;
+            border-color: blue;
+            border-style: double;
+            border-width: 5px;
+            text-align: center;
+            border-radius: 5px;
+            margin-top: 5px;
+            
+        }
+        .input1
+        {
+            padding: 10px;
+            margin-top: 10px;
+            height: 15px;
+            width:440px;
+            border: solid;
+            border-color: yellowgreen;
+            border-radius: 10px;
+            margin-left: 50px;
+            font-size: 45;
+            color: blue;
+            font-weight: bold;
+        }
+        .input11
+        {
+            padding: 10px;
+            margin-top: 10px;
+            height: 15px;
+            width:440px;
+            border: solid;
+            border-color: yellowgreen;
+            border-radius: 10px;
+            margin-left: 85px;
+            font-size: 45;
+            color: blue;
+            font-weight: bold;
+        }
+        label{
+            color: green;
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 25;
+            font-weight: bolder;
+        }
+        .check
+        {
+            margin-top: 5px;
+            margin-left: 125px;
+            color: blue;
+        }
+        .login {
+            
+            margin-left: 140px;
+            border-radius: 10px;
+            border-color: yellow;
+            border-width: 5px;
+            background-color: green;
+            margin-top: 35px;
+            height: 40px;
+            width: 95px;
+        }
+        .reset {
+            
+            margin-left: 140px;
+            border-radius: 10px;
+            border-color: yellow;
+            border-width: 5px;
+            background-color: green;
+            margin-top: 35px;
+            height: 40px;
+            width: 95px;
+        }
+        img{
+            margin-top: 1px;
+            border-style: double;
+            border-color: blue;
+            width: 85px;
+            height: 85px;
+            margin-left: 15px;
+            margin-top: 5px;
+        }
+    </style>
+</head>
+<body>
+    <marquee title="Welcome" bgcolor="yellowgreen"  behaviour="alternate" scrollamount="10" loop="5" height="45" font="Algerian" ><h3> Welcome to my portfolio | This webpage is desgined and developed by Uttam Kumar (Software Engineer (Fresher) Contact us @9708032614, uttamkr9708032614@gmail.com) </h3></marquee>
+    <div>
+        <img src="D:\Projects\html project\REG. FORM\logo.jpg" alt="Uttam Enterprises">
+    </div>
+    
+    <div class="container">
+        
+        <form action="connect.php" method="post">
+            <div class="takeinput">
+            <h2>Feedback Form</h2>
+            <label>Your Name:</label><input type="text" placeholder="Enter Your Full Name" required autocomplete="off" autofocus autocapitalize="words" class="input1" name="cname"> 
+            <label>Mobile No.:</label><input type="tel" placeholder="Enter Mobile number" required autocomplete="off" minlength="10" maxlength="10" class="input1" name="mno" >
+            <label>Email:</label><input type="email" placeholder="Enter Your emial id" name="email" autocomplete="off" class="input11">
+            <label>Comments:</label><textarea class="input1" name="comments" placeholder="Write your query or comments"  required></textarea><br>
+            <input type="checkbox" class="check"><p class="check">'I' agree with all Terms and conditions</p>
+            <input type="submit" value="Submit" class="login"><input type="reset" value="Reset" class="reset">
+            </div>
+        
+        </form>
+    </div>
+    
+</body>
+</html>
